@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home'
+let g:netrw_dirhist_2='/'
+let g:netrw_dirhist_3='/home/ginn/vagabond/libgui/qtgui'
+let g:netrw_dirhist_4='/home/ginn/Pic2Header/builddir'
+let g:netrw_dirhist_5='/home/ginn/.vim/ftplugin/c'
+let g:netrw_dirhist_6='/home/ginn/vagabond/libgui/Shaders'
