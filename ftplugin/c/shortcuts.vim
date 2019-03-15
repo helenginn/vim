@@ -9,6 +9,15 @@ let g:loaded_shortcuts = 1
 " `s to create a std::cout << std::endl;
 :imap `s std::cout << std::endl;Bha
 
+" `v to describe a vec3 object
+:imap `v vec3_desc() << F(a
+
+" `m to describe a mat3x3 object
+:imap `m mat3x3_desc() << F(a
+
+" `p to set up a printf
+:imap `p printf("");2hi
+
 " `h to turn a pasted function from .cpp file into a header declaration
 :imap `h p=^Wllbdwxx$a;
 
