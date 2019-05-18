@@ -28,6 +28,10 @@ let g:loaded_shortcuts = 1
 :imap `n :Ninja
 :nmap `n :Ninja
 
+" `N to run background ninja in insert mode?
+:imap `N :AsyncRun ninja -C build/current
+:nmap `N :AsyncRun ninja -C build/current
+
 imap `f :call <SID>CreateForLoop()<CR>
 
 fun s:CreateForLoop()
