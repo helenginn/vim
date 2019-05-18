@@ -1,4 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/home/ginn/vagabond/libgui/qtgui/vagabond.AppDir/usr/translations'
-let g:netrw_dirhist_2='/home/ginn/.vim/ftplugin/c'
