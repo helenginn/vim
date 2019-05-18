@@ -1,0 +1,1 @@
+../c/shortcuts.vim
