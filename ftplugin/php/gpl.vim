@@ -51,27 +51,5 @@ fun s:ProcessGPL()
 	let devnull = s:AddGPL(heading)
 endfun
 
-fun s:ProcessHeader()
-	let heading = input("Name of project: ")
-	let filename = expand('%:t:r')
-	let lnum = line('.')
-	call append(lnum, "#ifndef __" . heading . "__" . filename . "__")
-	call append(lnum+1, "#define __" . heading . "__" . filename . "__")
-	call append(lnum+2, "")
-	call append(lnum+3, "class " . filename)
-	call append(lnum+4, "{")
-	call append(lnum+5, "public:")
-	call append(lnum+6, "	" . filename . "();")
-	call append(lnum+7, "")
-	call append(lnum+8, "private:")
-	call append(lnum+9, "")
-	call append(lnum+10, "};")
-	call append(lnum+11, "")
-	call append(lnum+12, "#endif")
-    call cursor(lnum+6, 1)
-endfun
-
 command! GPL :call s:ProcessGPL()
-
-command! Header :call s:ProcessHeader()
 

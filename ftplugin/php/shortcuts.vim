@@ -28,10 +28,6 @@ let g:loaded_shortcuts = 1
 :imap `n :Ninja
 :nmap `n :Ninja
 
-" `d to run ninja in insert mode?
-:imap `d :Dinja
-:nmap `d :Dinja
-
 " `N to run background ninja in insert mode?
 :imap `N :AsyncRun ninja -C build/current
 :nmap `N :AsyncRun ninja -C build/current
